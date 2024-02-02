@@ -1,25 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelAdvisor</title>
-    <link rel="stylesheet" href="Styles/travel.css">
+
+    <!-- Google Font Muish -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- fontawsome setup -->
+    <script src="https://kit.fontawesome.com/29989e9bb5.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="Styles/travel.css" class="css">
     <link rel="stylesheet" href="Styles/travelresponsive.css">
 </head>
+
 <body>
     <header>
+        <nav class="">
+            <div class="name-logo">
+                <img src="./images/logo.png" alt="">
+                <h2 class="brand-name">Travel<span class="colored-txt">Advisor</span></h2>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <a href="">Home</a>
+                    <a href="">Packages</a>
+                    <a href="">Testimonial</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </ul>
+            </div>
+            <label for="" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </nav>
 
     </header>
 
-
     <main>
+        <!-- Banner Section Strts -->
+        <section class="banner">
+            <div class="banner-content">
+                <h2 class="banner-title">Explore Your Travel</h2>
+                <p class="banner-description">Embark on your journey with ease. Choose your destination, ideal travel
+                    dates, and preferred <br> travel style to personalize your adventure.</p>
+            </div>
+            <div class="form">
+                <form>
+                    <select id="where" name="where">
+                        <option value="">Where go</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                        <option value="nyc">New York City, USA</option>
+                    </select>
+                </form>
+                <form>
+                    <input type="text" placeholder="When">
+                </form>
+                <form>
+                    <select id="type" name="type">
+                        <option value="">Select type</option>
+                        <option value="">Luxury Trip</option>
+                        <option value="">Solo Trip</option>
+                        <option value="">Budget-Friendly</option>
+                    </select>
+                </form>
+                <button class="common-btn" type="submit">Find Now</button>
+            </div>
+        </section>
+        <!-- Banner Section Ends -->
+
+        <!-- Our Popular Tours  -->
+        <section class="popular-tours">
+            <div class="description">
+                <h2 class="popular-tour-title">Our Popular Tours</h2>
+                <p>Discover our curated collection of top-rated tours. Immerse yourself in enchanting and unforgettable
+                    experiences crafted for every travel enthusiast.</p>
+                <ul>
+                    <li>Explore historic wonders on our Heritage Tour – a captivating journey through time and culture.
+                    </li>
+                    <li>Indulge in luxury with our Exclusive Retreats – handpicked destinations for a lavish and serene
+                        escape.</li>
+                    <li> Adventure awaits! Join our Thrill-Seeker Expeditions, adrenaline-packed tours for the daring
+                        explorer in you.</li>
+                </ul>
+                <p>Dive into a world of excitement and create lasting memories with our popular tours. Each itinerary
+                    promises unique adventures and unparalleled exploration, ensuring a travel experience like no other.
+                </p>
+                <button class="common-btn">Read More</button>
+            </div>
+            <div>
+                <img src="./images/populartour.png" alt="">
+            </div>
+        </section>
+
+        <!-- Choose Your Destination -->
+        <section class="destination">
+            <div>
+                <h2 class="section-title">Choose Your Destination</h2>
+                <p class="section-description">Select your dream destination effortlessly. Explore a diverse range of
+                    locales, from exotic beaches to <br> cultural landmarks, and plan your perfect getaway.
+                </p>
+            </div>
+
+            <div class="gallery">
+                <div class="box col-4" id="box-1" style="background-image: url('./images/maldives.png');">
+                    Maldives
+                </div>
+                <div class="box col-4" id="box-2" style="background-image: url('./images/indonesia.png');">
+                    Indonesia
+                </div>
+                <div class="box col-2" id="box-3" style="background-image: url('./images/srilanka.png');">
+                    Srilanka
+                </div>
+                <div class="box col-4" id="box-4" style="background-image: url('./images/northamerica.png');">North
+                    America
+                </div>
+                <div class="box col-2" id="box-5" style="background-image: url('./images/kashmir.png');">
+                    Kashmir
+                </div>
+                <div class="box col-3" id="box-6" style="background-image: url('./images/bangladesh.png');">
+                    Bangladesh
+                </div>
+                <div class="box col-5" id="box-7" style="background-image: url('./images/bandarban.png');">
+                    Bandarban
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose-us">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-description">Discover the reasons to choose us. Unparalleled expertise, personalized
+                service, and a commitment <br> to creating memorable journeys set us apart in the world of travel.</p>
+            <div class="card-container">
+                <div class="card-1">
+                    <img src="./images/hotel.png" alt="">
+                    <h3 class="card-title">Handpicked Hotels</h3>
+                    <p class="card-description">Indulge in luxury with our Handpicked Hotels. Immerse yourself in
+                        unparalleled comfort and style, curated for an exquisite stay in every destination.</p>
+                </div>
+                <div class="card-2">
+                    <img src="./images/map.png" alt="">
+                    <h3 class="card-title">World Class Service</h3>
+                    <p class="card-description">Experience excellence with our World-Class Service. Our dedicated team
+                        ensures a seamless journey, providing unparalleled assistance and personalized attention
+                        throughout your travel adventure.</p>
+                </div>
+                <div class="card-3">
+                    <img src="./images/price-tag.png" alt="">
+                    <h3 class="card-title">Best Price Guarantee</h3>
+                    <p class="card-description">Enjoy peace of mind with our Best Price Guarantee. We promise unbeatable
+                        rates, ensuring you get the most value from your travel experience and a memory for life time.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us Section Ends -->
 
     </main>
 
-
-    <footer>
-
+    <!-- Footer Section Starts -->
+    <footer class="footer">
+        <div class="footer-name-logo">
+            <img src="./images/logo.png" alt="">
+            <h2 class="brand-name">Travel<span style="color:#FF5400;">Advisor</span></h2>
+        </div>
+        <p>Connect with us on social media for daily travel inspiration, behind-the-scenes glimpses, and exciting
+            updates. Your journey begins here; let's create memories together.</p>
+        <div class="footer-icons">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        <hr class="horizontal-line">
+        <p class="patent">2023, All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>
