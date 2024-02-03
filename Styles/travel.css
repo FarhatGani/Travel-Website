@@ -79,7 +79,7 @@ nav {
 /* Banner Section Starts */
 .banner {
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
-        url('../images/banner.png');
+        url('../Images/banner.png');
     background-repeat: no-repeat;
     background-position: center;
     padding: 60px 0;
@@ -379,7 +379,7 @@ ul {
 
 .newsletter-img {
     width: 70%;
-    background-image: url('../images/newsletter-image.png');
+    background-image: url('../Images/newsletter-image.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
